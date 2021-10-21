@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gelo: #F0F2F5;
+    --white: #FFFFFF;
+
+    --blue-300: #1877F2;
+    --blue-500: #1864f2;
+
+    --gray: #F0F2F5;
+}
+
+body{
+    font-family: "Roboto", sanf-serif;
+    background-color: var(--gray);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

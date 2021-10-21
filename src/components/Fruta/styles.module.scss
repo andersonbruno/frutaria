@@ -1,0 +1,32 @@
+.fruta {
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 0.8rem 0;    
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5px 2px rgba(0, 0, 0, .14);
+    position: relative;
+
+    ul {
+        list-style: none;
+    }
+
+    strong {
+        color: var(--blue-300)
+    }
+
+    button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: var(--white);
+        border: 0;
+        font-size: 1rem;
+        padding: .1rem .4rem;
+        border-radius: 2rem;
+    }
+
+    button:hover {
+        background-color: var(--gray);
+        cursor: pointer;
+    }
+}
