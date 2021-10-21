@@ -1,10 +1,5 @@
 import { actionsTypes } from '../constantes/frutas';
-
-interface FrutaProps {
-    id: number;
-    nome: string;
-    quantidade: number;
-}
+import Fruta from '../components/interfaces/fruta';
 
 const INITIAL_STATE = {
     frutas: [
@@ -15,11 +10,11 @@ const INITIAL_STATE = {
 
 type Action = {
     type: string,
-    payload: FrutaProps
+    payload: Fruta
 }
 
 export interface FrutasState {
-    frutas: Array<FrutaProps>;
+    frutas: Array<Fruta>;
 }
 
 const reducers = (state: FrutasState = INITIAL_STATE, action: Action) => {

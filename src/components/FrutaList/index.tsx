@@ -1,18 +1,13 @@
 import React from 'react';
 import styles from './styles.module.scss';
+import Fruta from '../interfaces/fruta';
 
 interface FrutaProps {
-    id: number;
-    nome: string;
-    quantidade: number;
+    fruta: Fruta;
+    removerFruta(fruta: Fruta): void;
 }
 
-interface Props {
-    fruta: FrutaProps;
-    removerFruta(fruta: FrutaProps): void;
-}
-
-export const Fruta: React.FC<Props> = ({ fruta, removerFruta }) => {
+export const FrutaList: React.FC<FrutaProps> = ({ fruta, removerFruta }) => {
     return (
         <div className={styles.fruta}>
             <ul>

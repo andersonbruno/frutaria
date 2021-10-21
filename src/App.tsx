@@ -1,11 +1,11 @@
 import './styles/global.scss';
-import Frutas from './components/Frutas';
+import Frutaria from './components/Frutaria';
 
 function App() {
 
   return (
     <div className="App">
-      <Frutas />
+      <Frutaria />
     </div>
   );
 }

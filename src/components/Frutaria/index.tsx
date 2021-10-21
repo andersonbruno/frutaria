@@ -1,17 +1,12 @@
 import { useState } from "react";
 import AdicionarFruta from "../AdicionarFruta";
-import { Fruta } from "../Fruta";
+import { FrutaList } from "../FrutaList";
 import styles from './styles.module.scss';
 import { useSelector } from "react-redux";
 import { FrutasState } from "../../reducers/fruta.reducers";
+import Fruta from '../interfaces/fruta';
 
-function Frutas() {
-    interface Fruta {
-        id: number;
-        nome: string;
-        quantidade: number;
-    }
-
+function Frutaria() {
     const frutax = useSelector<FrutasState, FrutasState["frutas"]>((state) => state.frutas);
 
     const [frutas, setFrutas] = useState(frutax);
@@ -31,7 +26,7 @@ function Frutas() {
                 {
                     frutas.map((frutada, index) => (
                         <div key={index}>
-                            <Fruta removerFruta={removerFruta} fruta={frutada} />
+                            <FrutaList removerFruta={removerFruta} fruta={frutada} />
                         </div>
                     ))
                 }
@@ -40,4 +35,4 @@ function Frutas() {
     )
 }
 
-export default Frutas;
+export default Frutaria;

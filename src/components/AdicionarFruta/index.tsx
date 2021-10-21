@@ -1,11 +1,6 @@
 import { useState } from "react";
 import styles from './styles.module.scss';
-
-interface Fruta {
-    id: number;
-    nome: string;
-    quantidade: number;
-}
+import Fruta from '../interfaces/fruta';
 
 interface Props {
     adicionarFruta(fruta: Fruta): void;
