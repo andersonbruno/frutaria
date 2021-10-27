@@ -1,17 +1,12 @@
 import { actionsTypes } from '../constantes/frutas';
-
-interface FrutaProps {
-    id: number;
-    nome: string;
-    quantidade: number;
-}
+import Fruta from '../components/interfaces/fruta';
 
 const actions = {
-    adicionar: (fruta: FrutaProps) => ({
+    adicionar: (fruta: Fruta) => ({
         type: actionsTypes.ADICIONAR_FRUTA,
         payload: fruta,
     }),
-    remover: (fruta: FrutaProps) => ({
+    remover: (fruta: Fruta) => ({
         type: actionsTypes.REMOVER_FRUTA,
         payload: fruta,
     })

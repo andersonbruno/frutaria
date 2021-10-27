@@ -19,7 +19,7 @@ function AdicionarFruta({ adicionarFruta }: Props) {
 
     return (
         <form className={styles.adicionarFruta} onSubmit={onSubmitHandler}>
-            <h1>Lista de Frutas</h1>
+            <h1>Adicionar Frutas</h1>
             <div className={styles.fields}>
                 <span>
                     <input
